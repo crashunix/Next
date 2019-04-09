@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@font-face {
+    font-family: 'New June';
+    src: url('../assets/fonts/NewJune-Regular.otf');
+}
+
+body {
+    font-family: 'New June';
+}
+
+h1 {font-size: 3em; line-height: 1.3em; font-weight: lighter;}
+h2 {font-size: 2.2em; font-weight: lighter;}
+h3 {font-size: 1.5em; font-weight: lighter;}
+
+a {
+    color: #000;
+}
+
+
+.layout-header {
+    padding: 20px 30px 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-logo {
+    width: 80px;
+}
+
+.button {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button-dark {
+    background: #000;
+    padding: 14px 32px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.layout-section {
+}
+
+#section-cover {
+    padding: 0 0 40px 0;
+}
+
+.container {
+    padding: 0 35px;
+}
+
+#cover-image {
+    margin: auto;
+    width: 80%;
+    height: 80vw;
+    max-height: 90vh;
+    max-width: 550px;
+    background: url('../assets/images/cover-image.png');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#cover-text {
+    
+}
+
+.text-content {
+    margin: 15px 0;
+    line-height: 1.4em;
+    color: #333;
+}
+
+#section-mimos {
+    background: #ededed;
+    padding: 60px 0 40px 0;
+}
+
+#mimos-text {
+}
+
+#cred_deb {
+    margin: 40px 0 0 0;
+}
+
+#cred_deb .button-group {
+    margin: 5px 0;
+}
+
+.button-group {
+    display: flex;
+}
+
+.button-group .button:last-child {
+    border-radius: 0 10px 10px 0;
+}
+
+.button-group .button:first-child {
+    border-radius: 10px 0 0 10px;
+}
+.button-green {
+    background: #01ff51;
+    padding: 10px 15px;
+}
+
+.button-grey {
+    background: #d6d6d6;
+    padding: 10px 15px;
+}
+
+.layout-slide {
+    margin: 30px 0 0 0;
+    display: flex;
+    padding: 0 20px;
+    overflow-x: auto;
+}
+.card {
+    min-width: 130px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+.icon {
+    width: 90px;
+    height: 90px;
+}
+
+#alimentacao {
+    background: url('../assets/icons/food.svg');
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+#compras {
+    background: url('../assets/icons/shop.svg');
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+#educacao {
+    background: url('../assets/icons/college.svg');
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+#entretenimento {
+    background: url('../assets/icons/entretenimento.svg');
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+#servicos {
+    background: url('../assets/icons/services.svg');
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+#transporte {
+    background: url('../assets/icons/transportation.svg');
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+#viagens {
+    background: url('../assets/icons/travel.svg');
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
