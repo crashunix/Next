@@ -180,6 +180,13 @@ a {
 .mimos__body {
 }
 
+.mimos__text {
+    margin: 15px 0;
+    line-height: 1.4em;
+    color: #333;
+}
+
+
 .mimos__container {
     padding: 0 35px;
 }
