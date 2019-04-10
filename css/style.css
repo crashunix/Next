@@ -157,7 +157,6 @@ a {
 }
 
 .cover__body {
-    
 }
 
 .cover__title {
@@ -205,7 +204,7 @@ a {
     margin: 30px 0 0 0;
     display: flex;
     padding: 0 20px;
-    overflow-x: auto;
+    overflow-x: hidden;
 }
 
 .slide__card {
