@@ -14,7 +14,7 @@ body {
 }
 
 h1 {font-size: 2.9em; line-height: 1.3em; font-weight: lighter;}
-h2 {font-size: 2.1em; font-weight: lighter;}
+h2 {font-size: 2.2em; font-weight: lighter;}
 h3 {font-size: 1.4em; font-weight: lighter;}
 
 a {
@@ -162,10 +162,11 @@ a {
 }
 
 .cover__title {
-    
+    width: 86%;
 }
 
 .cover__text {
+    width: 86%;
     margin: 15px 0;
     line-height: 1.4em;
     color: #333;
@@ -366,6 +367,92 @@ a {
     display: initial;
 }
 
+/* TABLET */
+@media (min-width: 768px) and (max-width: 1281px) {
+    #global {
+        display: grid;
+        grid-template-areas: 
+            "header header"
+            "cover cover"
+            "mimos mimos"
+            "descontos descontos";
+    }
+    
+    .cover {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        padding: 40px 0;
+        padding-bottom: 0;
+    }
+    
+    .cover__image {
+        margin: 0;
+        height: 535px;
+        width: 620px;
+    }
+    
+    .cover__body {
+        text-align: center;
+        padding: 10px 0 40px 0;
+    }
+    
+    .cover__title {
+        margin: 0 auto;
+        width: 90%;
+    }
+    
+    .cover__text {
+        margin: 10px auto 0 auto;
+        width: 60%;
+    }
+    
+    .mimos {
+        
+    }
+    
+    .mimos__body {
+        text-align: center;
+    }
+    
+    .pay-type {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .slide {
+        width: 100vw;
+        overflow-x: scroll;
+        padding: 0;
+    }
+    .descontos {
+        display: flex;
+        justify-content: center;
+    }
+    .descontos__container {
+        width: 80%;
+        flex-direction: row;
+    }
+    .descontos__card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .descontos__image {
+        margin: 0 0 20px 0;
+    }
+    
+    .desktop-only {
+        display: none;
+    }
+    .mobile-only {
+        display: none;
+    }
+}
+
+/* DESKTOP */
 @media (min-width: 1281px) {
     #global {
         display: grid;
@@ -386,13 +473,36 @@ a {
     
     .cover__image {
         margin: 0;
-        height: 535px;
-        width: 620px;
+        height: 530px;
+        width: 680px;
+    }
+    
+    .cover__container {
+        padding: 0;
+        width: 30%;
+    }
+    
+    .cover__body {
+        
+    }
+    
+    .cover__title {
+        
+    }
+    
+    .cover__text {
+        width: 70%;
     }
     
     .mimos {
-        width: 50vw;
+        width: calc(50vw - 120px);
+        padding-left: 120px;
     }
+    
+    .mimos__body {
+        width: 70%;
+    }
+    
     .slide {
         flex-wrap: wrap;
         overflow-x: hidden;
@@ -418,6 +528,9 @@ a {
         display: flex;
     }
     .mobile-only {
+        display: none;
+    }
+    .desktop-ex {
         display: none;
     }
 }
