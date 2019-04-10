@@ -267,6 +267,54 @@ a {
 
 /* SLIDE */
 
+.descontos {
+    background: #fff;
+}
+
+.descontos__container {
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.descontos__card {
+    display: flex;
+    width: 95%;
+    align-items: center;
+}
+
+.descontos__image {
+    width: 140px;
+    height: 140px;
+    background: black;
+    border-radius: 50%;
+    margin: 0 20px 0 0;
+}
+
+.descontos__body {
+    display: flex;
+    flex-direction: column;
+}
+
+.descontos__title {
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.descontos__text {
+    font-size: 18px;
+    margin: 5px 0 0 0;
+}
+
+.descontos__line {
+    width: 80%;
+    height: 1px;
+    background: #bbb;
+    margin: 35px 0;
+}
+
 .desktop-only {
     display: none;
 }
