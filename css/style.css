@@ -43,9 +43,19 @@ a {
     background: #555;
 }
 
+#global {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "cover cover"
+        "mimos mimos"
+        "descontos descontos";
+}
+
 /* HEADER */
 
 .header {
+    grid-area: header;
     padding: 20px 30px 10px 30px;
     display: flex;
     justify-content: space-between;
@@ -137,6 +147,7 @@ a {
 /* COVER */
 
 .cover {
+    grid-area: cover;
     padding: 0 0 40px 0;
 }
 
@@ -172,6 +183,7 @@ a {
 /* COVER */
 
 .mimos {
+    grid-area: mimos;
     background: #ededed;
     padding: 60px 0 40px 0;
 }
@@ -268,6 +280,7 @@ a {
 /* SLIDE */
 
 .descontos {
+    grid-area: descontos;
     background: #fff;
 }
 
@@ -309,6 +322,7 @@ a {
 .descontos__title {
     font-size: 22px;
     font-weight: bolder;
+    display: flex;
 }
 
 .descontos__text {
@@ -326,8 +340,19 @@ a {
 .desktop-only {
     display: none;
 }
+.mobile-only {
+    display: flex;
+}
 
 @media (min-width: 1281px) {
+    #global {
+        display: grid;
+        grid-template-areas: 
+            "header header"
+            "cover cover"
+            "mimos descontos";
+    }
+    
     .cover {
         display: flex;
         flex-direction: row-reverse;
@@ -344,14 +369,33 @@ a {
     }
     
     .mimos {
-        width: 50%;
+        width: 50vw;
     }
     .slide {
         flex-wrap: wrap;
         overflow-x: hidden;
     }
+    .descontos {
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+    }
+    .descontos__container {
+        width: 80%;
+        flex-direction: row;
+    }
+    .descontos__card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .descontos__image {
+        margin: 0 0 20px 0;
+    }
     
     .desktop-only {
         display: flex;
+    }
+    .mobile-only {
+        display: none;
     }
 }
