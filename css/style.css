@@ -285,12 +285,20 @@ a {
     align-items: center;
 }
 
+.descontos__image--ifood {
+    background: url('../assets/icons/ifood.svg');
+}
+
+.descontos__image--mc {
+    background: url('../assets/icons/mc.svg');
+}
+
 .descontos__image {
     width: 140px;
     height: 140px;
-    background: black;
-    border-radius: 50%;
     margin: 0 20px 0 0;
+    background-size: cover;
+    background-position: center;
 }
 
 .descontos__body {
