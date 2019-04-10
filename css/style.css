@@ -205,9 +205,9 @@ a {
 /* SLIDE */
 
 .slide {
-    margin: 30px 0 0 0;
+    width: 98vw;
+    margin: 30px auto 0 auto;
     display: flex;
-    padding: 0 20px;
     overflow-x: auto;
 }
 
@@ -424,9 +424,11 @@ a {
     }
     
     .slide {
-        width: 100vw;
+        width: 98vw;
         overflow-x: scroll;
         padding: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
     .descontos {
         display: flex;
@@ -504,8 +506,12 @@ a {
     }
     
     .slide {
+        width: 100%;
         flex-wrap: wrap;
         overflow-x: hidden;
+    }
+    .slide__card {
+        margin-bottom: 40px;
     }
     .descontos {
         width: 50vw;
