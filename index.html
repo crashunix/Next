@@ -7,47 +7,47 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
-        <header class="layout-header">
-            <img class="image-logo" src="assets/icons/logo.svg">
-            <nav id="header-menu">
-                <div class="menu-item">
-                    <div class="dot"></div>
-                    <span class="item-text">next</span>
+        <header class="header">
+            <img class="header__logo" src="assets/icons/logo.svg">
+            <nav class="header__menu desktop-only">
+                <div class="header__item">
+                    <div class="header__dot"></div>
+                    <span class="header__text">next</span>
                 </div>
-                <div class="menu-item">
-                    <div class="dot"></div>
-                    <span class="item-text">Flow</span>
+                <div class="header__item">
+                    <div class="header__dot"></div>
+                    <span class="header__text">Flow</span>
                 </div>
-                <div class="menu-item">
-                    <div class="dot"></div>
-                    <span class="item-text">Vaquinha</span>
+                <div class="header__item">
+                    <div class="header__dot"></div>
+                    <span class="header__text">Vaquinha</span>
                 </div>
-                <div class="menu-item">
-                    <div class="dot"></div>
-                    <span class="item-text">Objetivos</span>
+                <div class="header__item">
+                    <div class="header__dot"></div>
+                    <span class="header__text">Objetivos</span>
                 </div>
-                <div class="menu-item">
-                    <div class="dot-green"></div>
-                    <span class="item-text bold">Mimos</span>
+                <div class="header__item">
+                    <div class="header__dot header__dot--active"></div>
+                    <span class="header__text header__text--active">Mimos</span>
                 </div>
-                <div class="menu-item">
-                    <div class="dot"></div>
-                    <span class="item-text">Propostas</span>
+                <div class="header__item">
+                    <div class="header__dot"></div>
+                    <span class="header__text">Propostas</span>
                 </div>
             </nav>
-            <a class="button button-dark" href="#">Abra sua conta</a>
+            <a class="button button--dark button--lg" href="#">Abra sua conta</a>
         </header>
-        <section class="layout-section" id="section-cover">
-            <div id="cover-image"></div>
-            <div class="container">
-                <div id="cover-text">
-                    <h1 class="text-title">
+        <section class="cover">
+            <div class="cover__image"></div>
+            <div class="cover__container">
+                <div class="cover__body">
+                    <h1 class="cover__title">
                         Pra ganhar<br>
                         descontos<br>
                         exclusivos,<br>
                         vem pro next
                     </h1>
-                    <h3 class="text-content">
+                    <h3 class="cover__text">
                         Não é programa de ponto.<br>
                         É só nosso jeitinho<br>
                         de mimar &lt;3
@@ -55,61 +55,61 @@
                 </div>
             </div>
         </section>            
-        <section class="layout-section" id="section-mimos">
-            <div class="container">
-                <div id="mimos-text">
-                    <h2 class="text-title">
+        <section class="mimos">
+            <div class="mimos__container">
+                <div class="mimos__body">
+                    <h2 class="mimos__title">
                         Apresentamos<br>
                         os Mimos
                     </h2>
-                    <h3 class="text-content">
+                    <h3 class="mimos__text">
                         Parceiros exclusivos com<br> 
                         desconto só pra vc,<br>
                         que é next.
                     </h3>
-                    <h4 class="text-content">
+                    <h4 class="mimos__text">
                         <a href="#">Regras de uso</a>
                     </h4>
-                    <div id="cred_deb">
-                        <h5>Exibir Mimos para:</h5>
-                        <div class="button-group">
-                            <a href="#" class="button button-green">Crédito</a>
-                            <a href="#" class="button button-grey">Débito</a>
+                    <div class="pay-type">
+                        <h5 class="pay-type__label">Exibir Mimos para:</h5>
+                        <div class="pay-type__button-group button-group">
+                            <a href="#" class="button button--green">Crédito</a>
+                            <a href="#" class="button button--grey">Débito</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="layout-slide">
-                <a href="#" class="card">
-                    <i class="icon" id="alimentacao"></i>
+            <div class="slide">
+                <a href="#" class="slide__card">
+                    <i class="slide__icon slide__icon--alimentacao"></i>
                     <span>Alimentação</span>
                 </a>
-                <a href="#" class="card">
-                    <i class="icon" id="compras"></i>
+                <a href="#" class="slide__card">
+                    <i class="slide__icon slide__icon--compras"></i>
                     <span>Compras</span>
                 </a>
-                <a href="#" class="card">
-                    <i class="icon" id="educacao"></i>
+                <a href="#" class="slide__card">
+                    <i class="slide__icon slide__icon--educacao"></i>
                     <span>Educação</span>
                 </a>
-                <a href="#" class="card">
-                    <i class="icon" id="entretenimento"></i>
+                <a href="#" class="slide__card">
+                    <i class="slide__icon slide__icon--entretenimento"></i>
                     <span>Entretenimento</span>
                 </a>
-                <a href="#" class="card">
-                    <i class="icon" id="servicos"></i>
+                <a href="#" class="slide__card">
+                    <i class="slide__icon slide__icon--servicos"></i>
                     <span>Serviços</span>
                 </a>
-                <a href="#" class="card">
-                    <i class="icon" id="transporte"></i>
+                <a href="#" class="slide__card">
+                    <i class="slide__icon slide__icon--transporte"></i>
                     <span>Transporte</span>
                 </a>
-                <a href="#" class="card">
-                    <i class="icon" id="viagens"></i>
+                <a href="#" class="slide__card">
+                    <i class="slide__icon slide__icon--viagens"></i>
                     <span>Viagens</span>
                 </a>
             </div>
         </section>    
-        <section class="layout-section" id="section-vantagens"></section>
+        <section class="vantagens"></section>
     </body>
 </html>
