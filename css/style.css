@@ -43,15 +43,6 @@ a {
     background: #555;
 }
 
-#global {
-    display: grid;
-    grid-template-areas: 
-        "header header"
-        "cover cover"
-        "mimos mimos"
-        "descontos descontos";
-}
-
 /* HEADER */
 
 .header {
