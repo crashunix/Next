@@ -59,16 +59,17 @@ a {
 }
 
 .header__menu {
-  width: 30%;
-  display: flex;
-  justify-content: center;
+}
+
+.header__list {
+    display: flex;
 }
 
 .header__item {
-  display: flex;
-  align-items: center;
-  height: 20px;
-  margin: 0 10px;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    padding: 0 10px;
 }
 
 .header__dot {
@@ -83,7 +84,11 @@ a {
   background: #00ff5f;
 }
 
-.header__text--active {
+.header__link {
+    text-decoration: none;
+}
+
+.header__link--active {
     font-weight: bolder;
 }
 
