@@ -201,7 +201,6 @@ a {
     width: 70%;
     font-size: 2em;
     font-weight: bolder;
-    margin: auto;
 }
 
 .mimos__text {
@@ -597,6 +596,10 @@ a {
     
     .mimos__body {
         text-align: center;
+    }
+    
+    .mimos__title {
+        margin: auto;
     }
     
     .pay-type {
