@@ -18,6 +18,12 @@ h1 {font-size: 2.9em; line-height: 1.3em; font-weight: lighter;}
 h2 {font-size: 2.0em; font-weight: lighter;}
 h3 {font-size: 1.4em; font-weight: lighter;}
 
+text--xlg {font-size: 2.8em;}
+text--lg {font-size: 1.9em;}
+text--md {font-size: 1.4em;}
+text--sm {font-size: 1.2em;}
+text--xsm {font-size: 0.9em;}
+
 a {
     color: #000;
 }
@@ -99,12 +105,12 @@ a {
 .button {
     cursor: pointer;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 10px 20px;
     border-radius: 10px;
 }
 
 .button--lg {
-    padding: 14px 32px;
+    padding: 14px 38px;
     font-size: 16px;
 }
 
@@ -169,6 +175,7 @@ a {
 
 .cover__title {
     width: 86%;
+    font-size: 2.8em;
 }
 
 .cover__text {
@@ -176,6 +183,7 @@ a {
     margin: 15px 0;
     line-height: 1.4em;
     color: #333;
+    font-size: 1.4em;
 }
 
 /* COVER */
@@ -189,12 +197,22 @@ a {
 .mimos__body {
 }
 
-.mimos__text {
-    margin: 15px 0;
-    line-height: 1.4em;
-    color: #333;
+.mimos__title {
+    width: 70%;
+    font-size: 2em;
+    font-weight: bolder;
 }
 
+.mimos__text {
+    margin: 15px 0;
+    line-height: 1.2em;
+    color: #333;
+    font-size: 1.4em;
+}
+
+.mimos__text--sm {
+    font-size: 1.2em;
+}
 
 .mimos__container {
     padding: 0 35px;
@@ -202,6 +220,15 @@ a {
 
 .pay-type {
     margin: 40px 0 0 0;
+}
+
+.pay-type__label {
+    font-size: 0.9em;
+}
+
+.pay-type__item {
+    font-size: 1.2em;
+    font-weight: bolder;
 }
 
 .pay-type__button-group {
@@ -276,6 +303,10 @@ a {
     background-repeat: no-repeat;
 }
 
+.slide__title {
+    font-size: 1.1em;
+}
+
 .slide__card--active {
     opacity: 1;
 }
@@ -336,8 +367,8 @@ a {
 }
 
 .descontos__image {
-    width: 140px;
-    height: 140px;
+    width: 100px;
+    height: 100px;
     margin: 0 20px 0 0;
     background-size: cover;
     background-position: center;
@@ -374,10 +405,11 @@ a {
 }
 
 .vantagens__title {
-    width: 90%;
+    width: 95%;
     margin: auto;
     text-align: center;
     font-weight: bolder;
+    font-size: 1.9em;
 }
 
 .vantagens__carrossel {
@@ -428,7 +460,7 @@ a {
 .vantagens__logo::before {
     content: "R$ 20 off";
     position: absolute;
-    background: #01ff51;
+    background: #02ff5f;
     margin: -8px 0 0 100px;
     font-size: 20px;
     font-weight: bolder;
@@ -442,6 +474,7 @@ a {
 
 .vantagens__text{
     padding: 15px 0;
+    font-size: 1.4em;
 }
 
 .vantagens__price {
@@ -449,10 +482,15 @@ a {
     align-items: center;
     justify-content: center;
     margin: 10px 0 0 0;
+    font-size: 1.9em;
+}
+
+.vantagens__value {
+    font-size: 2.8em;
 }
 
 .vantagens__obs {
-    
+    font-size: 1.9em;
 }
 
 .vantagens__navigation {
@@ -487,10 +525,10 @@ a {
 }
 
 .hand__text {
-    width: 60%;
+    width: 90%;
     margin: 0 auto 50px auto;
     text-align: center;
-    font-size: 12px;
+    font-size: 1.1em;
     color: #aaa;
 }
 
