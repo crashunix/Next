@@ -15,7 +15,7 @@ body {
 }
 
 h1 {font-size: 2.9em; line-height: 1.3em; font-weight: lighter;}
-h2 {font-size: 2.2em; font-weight: lighter;}
+h2 {font-size: 2.0em; font-weight: lighter;}
 h3 {font-size: 1.4em; font-weight: lighter;}
 
 a {
@@ -359,6 +359,118 @@ a {
     height: 1px;
     background: #bbb;
     margin: 35px 0;
+}
+
+.vantagens {
+}
+
+.vantagens__container {
+    padding: 60px 20px;
+}
+
+.vantagens__title {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.vantagens__carrossel {
+    margin: 70px 0 0 0;
+    padding: 0 20px;
+}
+
+.vantagens__item {
+    width: 100%;
+}
+
+.vantagens__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vantagens__icon {
+    width: 25px;
+    height: 20px;
+}
+
+.vantagens__icon--left {
+    background: url('../assets/icons/left.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.vantagens__icon--right {
+    background: url('../assets/icons/right.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.vantagens__logo {
+    width: 180px;
+    height: 180px;
+    background: url('../assets/icons/uber.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin: 0 0 20px 0;
+}
+
+.vantagens__logo::before {
+    content: "R$ 20 off";
+    position: absolute;
+    background: #01ff51;
+    margin: -8px 0 0 100px;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 5px 15px;
+    border-radius: 40px;
+}
+
+.vantagens__body {
+    text-align: center;
+}
+
+.vantagens__text{
+    padding: 15px 0;
+}
+
+.vantagens__price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 0 0;
+}
+
+.vantagens__obs {
+    
+}
+
+.vantagens__navigation {
+    padding: 20px 0;
+    width: 20%;
+    margin: 50px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vantagens__circle {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #ccc;
+}
+
+.vantagens__circle--active {
+    width: 10px;
+    height: 10px;
+    background: #333;
 }
 
 .desktop-only {
