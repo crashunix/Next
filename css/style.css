@@ -201,6 +201,7 @@ a {
     width: 70%;
     font-size: 2em;
     font-weight: bolder;
+    margin: auto;
 }
 
 .mimos__text {
