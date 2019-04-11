@@ -473,6 +473,32 @@ a {
     background: #333;
 }
 
+.hand {
+    
+}
+
+.hand__container {
+    padding: 20px 20px 0 20px;
+}
+
+.hand__text {
+    width: 60%;
+    margin: 0 auto 50px auto;
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.hand__image {
+    width: 40%;
+    height: 365px;
+    margin: 0 auto;
+    background: url('../assets/images/card-hand.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .desktop-only {
     display: none;
 }
