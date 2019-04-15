@@ -576,7 +576,7 @@ a {
 .vantagens__lorem {
     grid-area: lorem;
     text-align: center;
-    font-size: 1.1em;
+    font-size: 0.8em;
     color: #aaa;
     margin: 40px 0 60px 0;
 }
