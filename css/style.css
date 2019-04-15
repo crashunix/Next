@@ -754,7 +754,7 @@ a {
     
     .modal__body {
         display: flex;
-        margin: 25px 0 0 0;
+        height: 87.5%;
     }
 
     .modal__left {
@@ -766,7 +766,13 @@ a {
 
     .modal__right {
         width: 50vw;
-        padding: 0 100px 0 0;
+        padding: 0 100px 0 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: left;
+        background: #ededed;
     }
     
     .slide {
