@@ -50,10 +50,16 @@ a {
 
 .header {
     grid-area: header;
-    padding: 20px 30px 10px 30px;
+    padding: 20px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 999;
 }
 
 .header__logo {
@@ -144,6 +150,7 @@ a {
 .cover {
     grid-area: cover;
     padding: 0 0 40px 0;
+    margin: 93.33px 0 0 0;
 }
 
 .cover__container {
@@ -197,7 +204,11 @@ a {
 }
 
 .mimos__regra {
-    font-size: 1.2em;
+    font-size: 1.1em;
+    text-decoration: underline;
+    background: rgba(0,0,0,0);
+    color: #333;
+    cursor: pointer;
 }
 
 .mimos__container {
@@ -206,10 +217,10 @@ a {
 
 .modal {
     width: 100vw;
-    height: calc(100vh - 83.33px);
+    height: calc(100vh - 93.33px);
     background: #f7f7f7;
     position: fixed;
-    top: 83.33px;
+    top: 93.33px;
     left: 0;
     z-index: 99;
     display: none;

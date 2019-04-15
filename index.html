@@ -70,13 +70,11 @@
                             desconto só pra vc,<br>
                             que é next.
                         </p>
-                        <span class="mimos__regra" id="mimos__regra">
-                            <a href="#">Regras de uso</a>
-                        </span>
+                        <button class="mimos__regra" id="mimos__regra">Regras de uso</button>
                         <div class="modal" id="modal">
                             <div class="modal__top">
                                 <h4 class="modal__subtitle">Regras de uso</h4>
-                                <a href="" class="modal__button"></a>
+                                <button class="modal__button" id="modal__button"></button>
                             </div>
                             <div class="modal__body">
                                 <div class="modal__left">
@@ -93,6 +91,7 @@
                             </div>
                         </div>
                         <script>
+                            
                             var modal = document.getElementById('modal');
                             var mimos__regra = document.getElementById('mimos__regra');
                             var modal__button = document.getElementById('modal__button');
@@ -101,7 +100,11 @@
                             modal__button.addEventListener('click', closeModal);
                             
                             function openModal() {
-                                modal.style.display = 'block';
+                                modal.style.display = 'block';                                
+                            }
+                            
+                            function closeModal() {
+                                modal.style.display = 'none';
                             }
                         </script>
                         <div class="pay-type">
