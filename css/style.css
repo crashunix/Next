@@ -654,6 +654,10 @@ a {
         margin: auto;
     }
     
+    .modal {
+        text-align: left;
+    }
+    
     .pay-type {
         text-align: center;
         display: flex;
@@ -746,6 +750,23 @@ a {
     
     .mimos__body {
         width: 70%;
+    }
+    
+    .modal__body {
+        display: flex;
+        margin: 25px 0 0 0;
+    }
+
+    .modal__left {
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal__right {
+        width: 50vw;
+        padding: 0 100px 0 0;
     }
     
     .slide {
