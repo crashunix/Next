@@ -28,10 +28,6 @@ a {
     color: #000;
 }
 
-.bold {
-    font-weight: bolder;
-}
-
 ::-webkit-scrollbar {
     height: 0;
     width: 10px;
@@ -143,10 +139,6 @@ a {
 
 /* BUTTON */
 
-.section {
-    background: #fff;
-}
-
 /* COVER */
 
 .cover {
@@ -170,9 +162,6 @@ a {
     background-repeat: no-repeat;
 }
 
-.cover__body {
-}
-
 .cover__title {
     width: 86%;
     font-size: 2.8em;
@@ -192,9 +181,6 @@ a {
     grid-area: mimos;
     background: #ededed;
     padding: 60px 0 40px 0;
-}
-
-.mimos__body {
 }
 
 .mimos__title {
@@ -244,9 +230,6 @@ a {
     background: url('../assets/icons/close.svg');
     background-size: cover;
     background-position: center;
-}
-
-.modal__body {
 }
 
 .modal__left {
@@ -369,26 +352,10 @@ a {
     font-weight: bolder;
 }
 
-/* SLIDE */
-
 .descontos {
     grid-area: descontos;
     background: #f7f7f7;
 }
-
-/*.descontos::before {
-    content: "";
-    position: absolute;
-    z-index: 999;
-    left: 60px;
-    margin: -25px 0 0 0;
-    border-bottom: 25px solid #fff; 
-    border-left: 25px solid transparent; 
-    border-right: 25px solid transparent; 
-    height: 0; 
-    width: 10px; 
-    border-radius: 20px 20px 0 0;
-}*/
 
 .descontos__wave {
     position: absolute;
@@ -509,10 +476,33 @@ a {
     background-repeat: no-repeat;
 }
 
+.vantagens__logo--uber {   
+    background: url('../assets/icons/uber.svg');
+}
+
+.vantagens__logo--uber::before {
+    content: "R$ 20 off";
+}
+
+.vantagens__logo--cinemark {
+    background: url('../assets/icons/cinemark.svg');
+}
+
+.vantagens__logo--cinemark::before {
+    content: "50% Off";
+}
+
+.vantagens__logo--ifood {
+    background: url('../assets/icons/ifood.svg');
+}
+
+.vantagens__logo--ifood::before {
+    content: "$ 20 off";
+}
+
 .vantagens__logo {
     width: 180px;
     height: 180px;
-    background: url('../assets/icons/uber.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -521,7 +511,6 @@ a {
 }
 
 .vantagens__logo::before {
-    content: "R$ 20 off";
     position: absolute;
     background: #02ff5f;
     margin: -8px 0 0 100px;
@@ -622,8 +611,7 @@ a {
         flex-direction: column-reverse;
         justify-content: space-around;
         align-items: center;
-        padding: 40px 0;
-        padding-bottom: 0;
+        padding: 40px 0 0 0;
     }
     
     .cover__image {
@@ -647,10 +635,6 @@ a {
         width: 60%;
     }
     
-    .mimos {
-        
-    }
-    
     .mimos__body {
         text-align: center;
     }
@@ -667,11 +651,8 @@ a {
     }
     
     .slide {
-        width: 98vw;
         overflow-x: scroll;
-        padding: 0;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
     }
     .descontos {
         display: flex;
@@ -688,13 +669,8 @@ a {
     .descontos__image {
         margin: 0 0 20px 0;
     }
-    
-    .vantagens {
-    }
 
     .vantagens__container {
-        padding: 60px 20px 0 20px;
-        display: grid;
         grid-template-areas: 
             "title title"
             "carrossel image"
@@ -703,133 +679,11 @@ a {
     }
 
     .vantagens__title {
-        grid-area: title;
         width: 80%;
-        margin: auto;
-        text-align: center;
-        font-weight: bolder;
-        font-size: 1.9em;
-    }
-
-    .vantagens__carrossel {
-        grid-area: carrossel;
-        margin: 60px 0 0 0;
-        padding: 0 20px;
-    }
-
-    .vantagens__item {
-        width: 100%;
-    }
-
-    .vantagens__top {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .vantagens__icon {
-        width: 25px;
-        height: 20px;
-    }
-
-    .vantagens__icon--left {
-        background: url('../assets/icons/left.svg');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .vantagens__icon--right {
-        background: url('../assets/icons/right.svg');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .vantagens__logo {
-        width: 180px;
-        height: 180px;
-        background: url('../assets/icons/uber.svg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        border-radius: 50%;
-        margin: 0 0 20px 0;
-    }
-
-    .vantagens__logo::before {
-        content: "R$ 20 off";
-        position: absolute;
-        background: #02ff5f;
-        margin: -8px 0 0 100px;
-        font-size: 20px;
-        font-weight: bolder;
-        padding: 5px 15px;
-        border-radius: 40px;
-    }
-
-    .vantagens__body {
-        text-align: center;
-    }
-
-    .vantagens__text{
-        padding: 15px 0;
-        font-size: 1.4em;
-    }
-
-    .vantagens__price {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 10px 0 0 0;
-        font-size: 1.9em;
-    }
-
-    .vantagens__value {
-        font-size: 2.8em;
-    }
-
-    .vantagens__obs {
-        font-size: 1.9em;
-    }
-
-    .vantagens__navigation {
-        padding: 20px 0;
-        width: 20%;
-        margin: 40px auto 0 auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .vantagens__circle {
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
-        background: #ccc;
-    }
-
-    .vantagens__circle--active {
-        width: 10px;
-        height: 10px;
-        background: #333;
-    }
-
-    .vantagens__lorem {
-        grid-area: lorem;
-        text-align: center;
-        font-size: 1.1em;
-        color: #aaa;
     }
 
     .vantagens__image {
         margin: 35px 0 0 0;
-        grid-area: image;
-        background: url('../assets/images/card-hand.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
     }
     
     .desktop-only {
@@ -857,7 +711,6 @@ a {
         justify-content: space-around;
         align-items: center;
         padding: 40px 90px 0 90px;
-        padding-bottom: 0;
     }
     
     .cover__image {
@@ -869,14 +722,6 @@ a {
     .cover__container {
         padding: 0;
         width: 30%;
-    }
-    
-    .cover__body {
-        
-    }
-    
-    .cover__title {
-        
     }
     
     .cover__text {
@@ -917,50 +762,32 @@ a {
         margin: 0 0 20px 0;
     }
     
-    .desktop-only {
-        display: flex;
-    }
-    
     .vantagens {
         width: 100%;
+        padding-left: 120px;
     }
 
     .vantagens__container {
-        padding: 60px 20px 0 20px;
-        display: grid;
         grid-template-areas: 
             "title image"
             "carrossel image"
             "lorem image";
+        grid-template-columns: 50vw 1fr;
     }
 
     .vantagens__title {
-        grid-area: title;
+        margin-left: 0;
         width: 50%;
-        margin: auto;
-        font-weight: bolder;
-        font-size: 1.9em;
+        text-align: left;
     }
 
     .vantagens__carrossel {
-        grid-area: carrossel;
-        margin: 60px 0 0 0;
-        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
     }
 
     .vantagens__item {
-        width: 100%;
-    }
-
-    .vantagens__top {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .vantagens__icon {
-        width: 25px;
-        height: 20px;
+        width: 30%;
     }
 
     .vantagens__icon--left {
@@ -977,19 +804,7 @@ a {
         background-repeat: no-repeat;
     }
 
-    .vantagens__logo {
-        width: 180px;
-        height: 180px;
-        background: url('../assets/icons/uber.svg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        border-radius: 50%;
-        margin: 0 0 20px 0;
-    }
-
     .vantagens__logo::before {
-        content: "R$ 20 off";
         position: absolute;
         background: #02ff5f;
         margin: -8px 0 0 100px;
@@ -999,68 +814,9 @@ a {
         border-radius: 40px;
     }
 
-    .vantagens__body {
-        text-align: center;
-    }
-
-    .vantagens__text{
-        padding: 15px 0;
-        font-size: 1.4em;
-    }
-
-    .vantagens__price {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 10px 0 0 0;
-        font-size: 1.9em;
-    }
-
-    .vantagens__value {
-        font-size: 2.8em;
-    }
-
-    .vantagens__obs {
-        font-size: 1.9em;
-    }
-
-    .vantagens__navigation {
-        padding: 20px 0;
-        width: 20%;
-        margin: 40px auto 0 auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .vantagens__circle {
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
-        background: #ccc;
-    }
-
-    .vantagens__circle--active {
-        width: 10px;
-        height: 10px;
-        background: #333;
-    }
-
-    .vantagens__lorem {
-        grid-area: lorem;
-        text-align: center;
-        font-size: 1.1em;
-        color: #aaa;
-    }
-
     .vantagens__image {
-        grid-area: image;
         width: 305px;
-        background: url('../assets/images/card-hand.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        height: 748px;
     }
     
     .mobile-only {
@@ -1068,5 +824,8 @@ a {
     }
     .desktop-ex {
         display: none;
+    }
+    .desktop-only {
+        display: initial;
     }
 }
