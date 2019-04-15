@@ -280,7 +280,7 @@ a {
 /* SLIDE */
 
 .slide {
-    width: 98vw;
+    width: 95vw;
     margin: 30px auto 0 auto;
     display: flex;
     overflow-x: auto;
@@ -778,7 +778,7 @@ a {
         margin-bottom: 40px;
     }
     .descontos {
-        width: 50vw;
+        width: 45vw;
         display: flex;
         justify-content: center;
     }
