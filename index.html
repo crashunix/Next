@@ -70,9 +70,40 @@
                             desconto só pra vc,<br>
                             que é next.
                         </p>
-                        <span class="mimos__text--sm">
+                        <span class="mimos__regra" id="mimos__regra">
                             <a href="#">Regras de uso</a>
                         </span>
+                        <div class="modal" id="modal">
+                            <div class="modal__top">
+                                <h4 class="modal__subtitle">Regras de uso</h4>
+                                <a href="" class="modal__button"></a>
+                            </div>
+                            <div class="modal__body">
+                                <div class="modal__left">
+                                    <h5 class="modal__title">O Mimo só vai valer se estiver tudo certo com seu cadastro na marca parceira, ok?</h5>
+                                </div>
+                                <div class="modal__right">
+                                    <h6 class="modal__subtitle">Bem-vindo aos Mimos do next!</h6>
+                                    <p class="modal__text">Mimos no next não é um programa de pontos e você não precisa juntar nada para conseguir usá-los.</p>
+                                    <p class="modal__text">Mas se liga, você precisa ter uma conta no next e um cartão de crédito, aí é só ir na área de Mimos dentro do aplicativo e ver todos os descontos disponíveis para você.</p>
+                                    <p class="modal__text">Ah, para quem tem cartão de débito também tem mimo.</p>
+                                    <p class="modal__text">Pra usar os mimos tem algumas regrinhas, veja no aplicativo como usar cada um deles e ele só vai valer se estiver tudo certo com seu cadastro na marca parceira, ok?</p>
+                                    <p class="modal__text">Ah! Para você saber, os mimos podem mudar sem aviso prévio. Mas não se preocupe, é só acessar sua conta no next e ver todos os mimos disponíveis para você.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            var modal = document.getElementById('modal');
+                            var mimos__regra = document.getElementById('mimos__regra');
+                            var modal__button = document.getElementById('modal__button');
+                            
+                            mimos__regra.addEventListener('click', openModal);
+                            modal__button.addEventListener('click', closeModal);
+                            
+                            function openModal() {
+                                modal.style.display = 'block';
+                            }
+                        </script>
                         <div class="pay-type">
                             <span class="pay-type__label">Exibir Mimos para:</span>
                             <div class="pay-type__button-group button-group">

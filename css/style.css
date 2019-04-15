@@ -210,12 +210,66 @@ a {
     font-size: 1.4em;
 }
 
-.mimos__text--sm {
+.mimos__regra {
     font-size: 1.2em;
 }
 
 .mimos__container {
     padding: 0 35px;
+}
+
+.modal {
+    width: 100vw;
+    height: calc(100vh - 83.33px);
+    background: #f7f7f7;
+    position: fixed;
+    top: 83.33px;
+    left: 0;
+    z-index: 99;
+    display: none;
+    overflow-y: auto;
+}
+
+.modal__top {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #c5c5c5;
+}
+
+.modal__button {
+    width: 25px;
+    height: 25px;
+    background: url('../assets/icons/close.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+.modal__body {
+}
+
+.modal__left {
+    padding: 40px 20px;
+}
+
+.modal__title {
+    font-size: 1.8em;
+    font-weight: lighter;
+    width: 70%;
+}
+
+.modal__right {
+    /*ackground: #ededed;*/
+    padding: 20px;
+}
+
+.modal__subtitle {
+    font-size: 1.2em;
+}
+
+.modal__text {
+    padding: 10px 0;
 }
 
 .pay-type {
