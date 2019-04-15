@@ -319,7 +319,7 @@ a {
 
 .descontos {
     grid-area: descontos;
-    background: #fff;
+    background: #f7f7f7;
 }
 
 /*.descontos::before {
